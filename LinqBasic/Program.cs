@@ -41,11 +41,22 @@ namespace LinqBasic
 
             //Using LINQ query
 
-            var ar = from i in brr select i;
+            var ar = from i in arr where i>40 orderby i descending select i;
             foreach(var i in ar)
             {
                 Console.Write(" "+i);
             }
+            Console.WriteLine();
+
+            string[] names = { "Mani", "deep", "India", "Telangana","Hyderabad" };
+
+            var a = from name in names where name.Contains("i") select name;
+
+            foreach(var item in a)
+            {
+                Console.Write(" "+item);
+            }
+            Console.ReadLine(); 
         }
     }
 }
