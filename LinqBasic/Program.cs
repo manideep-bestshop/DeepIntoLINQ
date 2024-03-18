@@ -56,7 +56,27 @@ namespace LinqBasic
             {
                 Console.Write(" "+item);
             }
-            Console.ReadLine(); 
+            Console.ReadLine();
+
+            List<int> nums=new List<int>{ 1, 2, 3, 4, 5 };
+            var res = nums.Where(i => i>2).ToList();
+            foreach(var i in res)
+            {
+                Console.Write(" "+i);
+            }
+            Console.WriteLine("Enumerables");
+            var array = new int[] { 1,3,4,5};
+            array.GetEnumerator();
+
+            foreach(var i in array)
+            {
+                Console.WriteLine(i);
+            }
+            var enumerator = array.GetEnumerator();
+            while(enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
         }
     }
 }

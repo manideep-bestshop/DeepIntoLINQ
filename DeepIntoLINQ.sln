@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqBasic", "LinqBasic\LinqBasic.csproj", "{AF4BA8E6-F94A-4532-9954-0C7A35538204}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerableIEnumeratorEx", "IEnumerableIEnumeratorEx\IEnumerableIEnumeratorEx.csproj", "{242E173A-87C3-4396-8CEE-5DFE92BBFE6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AF4BA8E6-F94A-4532-9954-0C7A35538204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF4BA8E6-F94A-4532-9954-0C7A35538204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF4BA8E6-F94A-4532-9954-0C7A35538204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{242E173A-87C3-4396-8CEE-5DFE92BBFE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242E173A-87C3-4396-8CEE-5DFE92BBFE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242E173A-87C3-4396-8CEE-5DFE92BBFE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242E173A-87C3-4396-8CEE-5DFE92BBFE6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
