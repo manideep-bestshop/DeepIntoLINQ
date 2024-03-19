@@ -33,4 +33,20 @@ LINQ=>SQL Server
 2.type safe
 3.Intellisence available
           
+ IEnumerableIEnumerator:
+-----------------------
+                 IEnumerator and IEnumerable are both interfaces, used for working with collections,
+ enabling iteration over a sequence of elements. They are fundamental parts of the IEnumerator pattern.
  
+1.IEnumerable:
+---------------
+-IEnumerable is the parent interface that represents a collection of objects that can be enumerated.
+-It contains a single method GetEnumerator() that returns an IEnumerator interface.
+-When a class implements IEnumerable, it indicates that instances of that class can be enumerated.
+
+2.IEnumerator:
+---------------
+-IEnumerator provides a way to iterate through a collection of items one at a time.
+-It contains methods like MoveNext(), which advances the enumerator to the next element, and Reset(),
+  which resets the enumerator to its initial position.
+-It also includes a property Current, which returns the current element in the collection.
