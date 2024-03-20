@@ -50,3 +50,16 @@ LINQ=>SQL Server
 -It contains methods like MoveNext(), which advances the enumerator to the next element, and Reset(),
   which resets the enumerator to its initial position.
 -It also includes a property Current, which returns the current element in the collection.
+
+Threading
+-----------
+-Every application by default contains one thread to execute the program and that is known as 
+ Main Threading,so every program is by default single threaded model.
+ 
+Multi-Threadings:
+-----------------
+
+Process: Multi threadings
+
+-Time sharing
+-advantage of using maximum of CPU Resources
