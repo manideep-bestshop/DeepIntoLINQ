@@ -63,3 +63,35 @@ Process: Multi threadings
 
 -Time sharing
 -advantage of using maximum of CPU Resources
+
+ImpNotesOnThreading:
+-------------------
+physical processor
+-------------------
+      also known as a CPU (Central Processing Unit), refers to the actual hardware
+ component within a computer system that performs calculations, executes instructions, and manages data manipulation.
+ It's the physical chip that you can see and touch, typically containing multiple cores.
+ 
+logical processor
+-----------------
+     on the other hand, refers to a virtual processing unit created by the operating system to manage
+ tasks and execute instructions. In modern CPUs, each physical core can often handle multiple threads through 
+ technologies like hyper-threading. Each thread represents a logical processor, allowing the CPU to execute
+ multiple tasks simultaneously or in parallel. 
+
+Process:
+--------
+     In computing, a process refers to an instance of a computer program that is being executed.
+ Processes are managed by the operating system, which allocates resources and schedules their execution on the CPU.
+ 
+Threading:
+----------
+     Threading is a programming technique used to create concurrent execution paths within a single process. 
+ Threads are lightweight processes within a program that can perform tasks independently of each other. 
+ 
+ MultiTasking vs MultiThreading:
+ -------------------------------
+ -multitasking refers to the ability of an operating system to run multiple processes concurrently, 
+ -while multithreading is a programming technique that allows a single process to create and manage multiple threads of execution. 
+ -Multitasking operates at the level of the operating system,
+ -while multithreading operates within the context of a single process.
