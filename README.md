@@ -95,3 +95,183 @@ Threading:
  -while multithreading is a programming technique that allows a single process to create and manage multiple threads of execution. 
  -Multitasking operates at the level of the operating system,
  -while multithreading operates within the context of a single process.
+
+Naming Conventions:
+-------------------
+      In C#, naming conventions are essential for writing clean, readable, and maintainable code. 
+Here are some commonly accepted naming conventions in C#:
+
+1.Pascal Case: 
+--------------
+       Pascal case is used for naming classes, methods, properties, and namespaces. 
+ It capitalizes the first letter of each word in the identifier and does not use underscores.
+For example:
+
+ClassName
+MethodName()
+PropertyName
+NamespaceName
+
+public class MyClass  // Class Name 
+{
+    public void MyMethod() // Method namespaces
+    {
+        // Method implementation
+    }
+
+    public string MyProperty { get; set; }  // Property Name
+}
+
+2.Camel Case: 
+-------------
+      Camel case is used for naming parameters, local variables, and fields. It capitalizes the first letter 
+of each word except for the first word, and does not use underscores.
+For example:
+
+methodName
+propertyName
+localVariable
+fieldName
+
+public class MyClass
+{
+    public void MyMethod(int myParameter) // parameter
+    {
+        int localVar = 10;  // local Variable
+        string fieldName = "example"; // field name
+    }
+
+    private string propertyName; // private property
+}
+
+3.Constants: 
+------------
+  Constants are named using all uppercase letters, with words separated by underscores. 
+ For example:
+ 
+CONSTANT_NAME
+
+public class Constants
+{
+    public const int MAX_VALUE = 100;
+    public const string FILE_PATH = "C:\\example.txt";
+}
+
+4.Prefixes and Suffixes:
+------------------------
+ Sometimes prefixes and suffixes are used to indicate the type of the identifier.
+ For example:
+
+strVariable for string variables
+btnSubmit for button controls
+intIndex for integer indices
+
+public class Example
+{
+    private string strMessage;
+    private Button btnSubmit;
+    private int intIndex;
+}
+
+5.Acronyms and Abbreviations: 
+-----------------------------
+   Acronyms and abbreviations should be treated as words. 
+   For example:
+
+XmlDocument instead of XMLDocument
+userId instead of UserID
+
+public class XmlHandler
+{
+    public XmlDocument LoadXmlDocument(string xmlFilePath)
+    {
+        // Load and return XmlDocument
+    }
+}
+
+6.Meaningful Names: 
+-------------------
+Choose names that are descriptive and indicate the purpose or use of the identifier. Avoid single-letter names except for temporary loop variables.
+
+public class ShoppingCart
+{
+    private List<Product> productsInCart;
+
+    public void AddProduct(Product product)
+    {
+        productsInCart.Add(product);
+    }
+}
+
+7.Namespace Names:
+------------------
+    Use nouns or noun phrases for namespace names. Avoid abbreviations.
+	
+namespace CompanyName.ProductName.ModuleName
+{
+    // Classes and code related to a specific module
+}
+
+8.Class Names:
+--------------
+   Use nouns or noun phrases to name classes. Class names should be singular.	
+ 
+public class Employee
+{
+    // Class implementation
+}
+
+9.Interface Names:
+------------------
+    Interface names should start with the letter "I" followed by a PascalCase name that describes the functionality it provides.
+	
+public interface ILogger
+{
+    void Log(string message);
+}
+
+10.Method Names: 
+----------------
+    Use verbs or verb phrases to name methods. Method names should be descriptive and indicate the action performed by the method.
+	
+public class Calculator
+{
+    public int Add(int num1, int num2)
+    {
+        return num1 + num2;
+    }
+}
+
+11.Property Names: 
+------------------
+   Property names should be nouns or noun phrases that describe the property.
+   
+ public class Person
+{
+    public string FullName { get; set; }
+    public int Age { get; set; }
+}  
+
+12.Event Names: 
+---------------
+   Event names should be verbs or verb phrases that describe the action that triggers the event.
+   
+   public class Button
+{
+    public event EventHandler Clicked;
+
+    protected virtual void OnClicked(EventArgs e)
+    {
+        Clicked?.Invoke(this, e);
+    }
+}
+
+13.Boolean Properties and Fields:
+---------------------------------
+    Boolean properties and fields should be prefixed with "Is", "Has", or another appropriate verb to indicate their meaning. 
+	
+public class User
+{
+    public bool IsActive { get; set; }
+    private bool hasPermission;
+}	
